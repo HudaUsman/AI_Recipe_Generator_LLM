@@ -1,0 +1,242 @@
+body {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    background-image: url('background3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    animation: slideUp 1.5s ease-out;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.p2 {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.p3 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.link-style {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-top: 30px;
+    justify-content: center;
+    animation: slideUp 2.5s ease-out;
+    background: #f39c12;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.recipe-link,
+#fetchRecipeBtn {
+    display: inline-block;
+    background: #f39c12;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.recipe-link:hover,
+#fetchRecipeBtn:hover {
+    background: #e67e22;
+}
+
+#randomRecipeResult {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#ingredientsInput {
+    padding: 10px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#ingredientsInput::placeholder {
+    color: gray;
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.recipe-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 450px;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.recipe-card h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.recipe-card h4 {
+    margin-top: 10px;
+    color: #555;
+}
+
+.recipe-card ul {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.recipe-card p {
+    color: #444;
+    font-size: 14px;
+    text-align: justify;
+}
+.recipe-link,
+#searchDishBtn {
+    display: inline-block;
+    background: #f39c12;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.recipe-link:hover,
+#searchDishBtn:hover {
+    background: #e67e22;
+}
+
+#randomRecipeResult {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#dishInput {
+    padding: 10px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#dishInput::placeholder {
+    color: gray;
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+main {
+    padding: 20px;
+}
