@@ -240,3 +240,102 @@ p {
 main {
     padding: 20px;
 }
+
+
+/* AI Assistant Page Styles */
+
+body {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    background-image: url('background3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 20px;
+    animation: slideUp 1.2s ease-out;
+}
+
+.ai-section {
+    background-color: rgba(255, 255, 255, 0.93);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    max-width: 600px;
+    width: 90%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ai-section input {
+    padding: 14px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.ai-section button {
+    background: #f39c12;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.ai-section button:hover {
+    background: #e67e22;
+}
+
+#aiResponse {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 12px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 25px;
+    line-height: 1.6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Responsive for mobile */
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .ai-section input {
+        width: 90%;
+    }
+
+    .ai-section button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    #aiResponse {
+        font-size: 15px;
+        padding: 16px;
+    }
+}
